@@ -150,24 +150,49 @@ main {
 
         .botonVolver {
             font-family: 'Montserrat', sans-serif;
-            padding: 10px 20px;
             text-transform: uppercase;
-            font-size: 15px;
-            margin-top: 15px;
-            border: solid #1616169e;
+            font-size: 12px;
+            padding: 8px 12px;
+            margin: 10px 0;
+            border: solid #4b4b4b9e;
+            background-color: #4b4b4b9e;
             border-radius: 5px;
+            transition: 0.5s ease;
+            color: #fff;
 
             a {
                 text-decoration: none;
-                color: black;
+                color: #fff;
+
+
             }
-
         }
-
         .botonVolver:hover {
-            background-color: rgb(33, 33, 33);
-            color: #fff;
-            transition: 0.7s ease;
+            background-color: black;
+    
         }
+    }
+
+    .botonVolverDos {
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 8px 12px;
+        margin: 10px 0;
+        border: solid #4b4b4b9e;
+        background-color: #4b4b4b9e;
+        border-radius: 5px;
+        transition: 0.5s ease;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+
+
+        }
+    }
+
+    .botonVolverDos:hover {
+        background-color: black;
     }
 }

@@ -42,6 +42,7 @@ let generarItemCarrito = () => {
         }).join("");
     }
     else {
+       
         productosCarrito.innerHTML = ``
         etiqueta.innerHTML = `<h3>Su carrito está vacío</h3>
 <img src="../recursos/images/gatito.jpg" alt="foto gatito">
@@ -51,17 +52,6 @@ let generarItemCarrito = () => {
     }
 }
 generarItemCarrito();
-
-
-
-
-
-
-
-
-
-
-
 
 let incrementar = (id) => {
     let itemSeleccionado = id;

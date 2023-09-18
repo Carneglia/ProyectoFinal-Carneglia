@@ -44,6 +44,24 @@
   .shop .item:hover {
     transform: scale(1.03); }
 
+.goPay {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 8px 12px;
+  margin: 10px 0;
+  border: solid #4b4b4b9e;
+  background-color: #00a200;
+  border-radius: 5px;
+  transition: 0.5s ease; }
+  .goPay a {
+    text-decoration: none;
+    color: #fff; }
+
+.goPay:hover {
+  background-color: #00c900;
+  padding: 10px 15px; }
+
 @media (max-width: 1000px) {
   .shop {
     grid-template-columns: repeat(2, 223px); } }
@@ -198,19 +216,35 @@ main {
       font-family: 'Montserrat', sans-serif; }
     main .etiqueta .botonVolver {
       font-family: 'Montserrat', sans-serif;
-      padding: 10px 20px;
       text-transform: uppercase;
-      font-size: 15px;
-      margin-top: 15px;
-      border: solid #1616169e;
-      border-radius: 5px; }
+      font-size: 12px;
+      padding: 8px 12px;
+      margin: 10px 0;
+      border: solid #4b4b4b9e;
+      background-color: #4b4b4b9e;
+      border-radius: 5px;
+      transition: 0.5s ease;
+      color: #fff; }
       main .etiqueta .botonVolver a {
         text-decoration: none;
-        color: black; }
+        color: #fff; }
     main .etiqueta .botonVolver:hover {
-      background-color: #212121;
-      color: #fff;
-      transition: 0.7s ease; }
+      background-color: black; }
+  main .botonVolverDos {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 8px 12px;
+    margin: 10px 0;
+    border: solid #4b4b4b9e;
+    background-color: #4b4b4b9e;
+    border-radius: 5px;
+    transition: 0.5s ease; }
+    main .botonVolverDos a {
+      text-decoration: none;
+      color: #fff; }
+  main .botonVolverDos:hover {
+    background-color: black; }
 
 .bannerArea {
   width: 100%;
