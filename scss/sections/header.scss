@@ -1,0 +1,65 @@
+.header {
+    .nav {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+
+        .titulos {
+            text-align: center;
+            margin: 10px;
+
+            a {
+                text-decoration: none;
+
+                h1 {
+                    font-family: 'Montserrat', sans-serif;
+                    text-transform: uppercase;
+                    color: #fff;
+                }
+
+                h2 {
+                    font-family: 'Montserrat', sans-serif;
+                    text-transform: uppercase;
+                    color: #fff;
+                    font-size: 15px;
+                }
+            }
+        }
+
+        a {
+            text-decoration: none;
+
+            .carrito {
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 10px;
+
+                i {
+                    cursor: pointer;
+                }
+
+                .cantidad {
+                    position: absolute;
+                    top: 2px;
+                    right: 6px;
+                    background-color: #d10202e8;
+                    padding: 2px;
+                    border-radius: 20%;
+                }
+
+                .bi-bag-heart {
+                    background-color: white;
+                    border-radius: 20%;
+                    color: black;
+                    padding: 8px;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
