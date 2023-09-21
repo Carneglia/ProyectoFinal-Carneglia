@@ -249,18 +249,18 @@ main {
 .bannerArea {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.0117297) 0%, rgba(0, 0, 0, 0.00892857) 100%), url(../recursos/images/arosDragones.jpg);
+  background-image: linear-gradient(0deg, #00000003 0%, #00000002 100%), url(../recursos/images/arosDragones.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center; }
   .bannerArea .contentArea {
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center; }
     .bannerArea .contentArea .contenido {
-      height: 100%;
+      max-height: 100%;
       text-align: center;
       position: absolute;
       top: 30vh; }
