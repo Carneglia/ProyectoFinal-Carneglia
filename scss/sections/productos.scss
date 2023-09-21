@@ -1,3 +1,6 @@
+main{
+    padding-top: 100px;
+}
 .shop {
     display: grid;
     grid-template-columns: repeat(4, 223px);
@@ -27,6 +30,9 @@
 
             h3 {
                 font-family: 'Bebas Neue';
+                background-color: #ffc0cbd9;
+                padding: 3px 5px;
+                border-radius: 5px;
             }
 
             .precio-cantidad {
@@ -41,12 +47,15 @@
                     gap: 6px;
                     cursor: pointer;
 
-                    .bi-dash {
+                    .bi-bag-dash {
                         color: red;
+                        
                     }
 
-                    .bi-plus {
-                        color: green
+                    .bi-bag-plus {
+                        color: green;
+                       
+                        
                     }
                 }
             }

@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box; }
 
+main {
+  padding-top: 100px; }
+
 .shop {
   display: grid;
   grid-template-columns: repeat(4, 223px);
@@ -26,7 +29,10 @@
         font-family: 'Bebas Neue';
         font-size: 16px; }
       .shop .item .detalles h3 {
-        font-family: 'Bebas Neue'; }
+        font-family: 'Bebas Neue';
+        background-color: #ffc0cbd9;
+        padding: 3px 5px;
+        border-radius: 5px; }
       .shop .item .detalles .precio-cantidad {
         display: flex;
         justify-content: space-between;
@@ -37,9 +43,9 @@
           align-items: center;
           gap: 6px;
           cursor: pointer; }
-          .shop .item .detalles .precio-cantidad .botones .bi-dash {
+          .shop .item .detalles .precio-cantidad .botones .bi-bag-dash {
             color: red; }
-          .shop .item .detalles .precio-cantidad .botones .bi-plus {
+          .shop .item .detalles .precio-cantidad .botones .bi-bag-plus {
             color: green; }
   .shop .item:hover {
     transform: scale(1.03); }
@@ -75,7 +81,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  position: fixed;
+  width: 100%; }
   .header .nav .titulos {
     text-align: center;
     margin: 10px; }
@@ -142,9 +150,9 @@ main {
         margin-left: 7px;
         margin-bottom: 20px;
         cursor: pointer; }
-        main .productosCarrito .itemCarrito .botones .bi-dash {
+        main .productosCarrito .itemCarrito .botones .bi-bag-dash {
           color: red; }
-        main .productosCarrito .itemCarrito .botones .bi-plus {
+        main .productosCarrito .itemCarrito .botones .bi-bag-plus {
           color: green; }
       main .productosCarrito .itemCarrito h3 {
         font-family: 'Montserrat', sans-serif;
@@ -160,15 +168,17 @@ main {
         main .productosCarrito .itemCarrito .tituloPrecio .nombre {
           margin-top: 4px; }
         main .productosCarrito .itemCarrito .tituloPrecio .precio {
-          background-color: #424242c1;
-          color: #fff;
-          padding: 3px 6px; }
+          background-color: #ffc0cbd9;
+          padding: 3px 5px;
+          border-radius: 5px; }
         main .productosCarrito .itemCarrito .tituloPrecio h4 {
           display: flex;
           text-transform: uppercase;
           gap: 10px;
-          font-size: 14px;
+          font-size: 16px;
           margin-top: 10px; }
+          main .productosCarrito .itemCarrito .tituloPrecio h4 p {
+            font-family: 'Bebas Neue'; }
         main .productosCarrito .itemCarrito .tituloPrecio .bi-x-square {
           color: red;
           margin-top: 1px;

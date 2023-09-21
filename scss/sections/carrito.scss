@@ -35,12 +35,15 @@ main {
                 cursor: pointer;
 
 
-                .bi-dash {
+                .bi-bag-dash {
                     color: red;
+                    
                 }
 
-                .bi-plus {
-                    color: green
+                .bi-bag-plus {
+                    color: green;
+                   
+                    
                 }
             }
 
@@ -63,17 +66,20 @@ main {
                 }
 
                 .precio {
-                    background-color: #424242c1;
-                    color: #fff;
-                    padding: 3px 6px
+                    background-color: #ffc0cbd9;
+                    padding: 3px 5px;
+                    border-radius: 5px;
                 }
 
                 h4 {
                     display: flex;
                     text-transform: uppercase;
                     gap: 10px;
-                    font-size: 14px;
+                    font-size: 16px;
                     margin-top: 10px;
+                   p{
+                    font-family: 'Bebas Neue';
+                   }
                 }
 
                 .bi-x-square {
