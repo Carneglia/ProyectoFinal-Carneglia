@@ -31,11 +31,12 @@ let generarItemCarrito = () => {
                         <i onclick="eliminarProducto(${id})" class="bi bi-x-square"></i>
                     </div>
                     <div class="botones">
+                    <p> Cantidad: </p>
                             <i onclick="quitar(${id})" class="bi bi-bag-dash"></i>
                         <div id=${id} class="cantidad">${item}</div>
                             <i onclick="incrementar(${id})" class="bi bi-bag-plus"></i>
                     </div>
-                    <h3> Total Prod. $ ${item * buscador.precio}</h3>
+                    <h3> Total productos: $ ${item * buscador.precio}</h3>
                 </div>
             </div>
             `
@@ -131,8 +132,8 @@ let totalCuenta = () => {
         etiqueta.innerHTML = `
         <h2 class="totalAPagar"> Total a pagar : $ ${monto} </h2>
         <div class="cuentaContainer">
-        <button class="pagar"> Pagar </button>
-        <button onclick="eliminarCarrito()" class="eliminar"> Eliminar Todo </button>
+        <button class="pagar">Comprar </button>
+        <button onclick="eliminarCarrito()" class="eliminar"> Vaciar el Carrito </button>
         </div>
         `
     } else return;

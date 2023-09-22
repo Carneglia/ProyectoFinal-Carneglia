@@ -13,10 +13,12 @@ main {
 
         .itemCarrito {
             display: flex;
-            border: 1px solid #424242c1;
+            border: 1px solid #f5f5f5;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
             border-radius: 5px;
-            box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
             transition: 0.7s ease;
+
+            background-color: #fff;
 
 
             img {
@@ -34,22 +36,29 @@ main {
                 margin-bottom: 20px;
                 cursor: pointer;
 
+                div {
+                    font-family: "proxima nova";
+                }
+
+                p {
+                    font-family: "proxima nova";
+                }
+
 
                 .bi-bag-dash {
                     color: red;
-                    
+
                 }
 
                 .bi-bag-plus {
                     color: green;
-                   
-                    
+
+
                 }
             }
 
             h3 {
-                font-family: 'Montserrat', sans-serif;
-                text-transform: uppercase;
+                font-family: "proxima nova";
                 font-size: 15px;
                 margin-left: 5px
             }
@@ -66,7 +75,8 @@ main {
                 }
 
                 .precio {
-                    background-color: #ffc0cbd9;
+                    border: 1px solid #f5f5f5;
+                    box-shadow: 0 1px 1px 0 #0000001a;
                     padding: 3px 5px;
                     border-radius: 5px;
                 }
@@ -75,11 +85,13 @@ main {
                     display: flex;
                     text-transform: uppercase;
                     gap: 10px;
-                    font-size: 16px;
+                    font-size: 14px;
                     margin-top: 10px;
-                   p{
-                    font-family: 'Bebas Neue';
-                   }
+
+                    p {
+                        //font-family: 'Bebas Neue';
+                        font-family: 'Montserrat', sans-serif;
+                    }
                 }
 
                 .bi-x-square {
@@ -101,44 +113,56 @@ main {
         align-items: center;
         justify-content: center;
         text-align: center;
+        margin-top: 20px;
 
         .totalAPagar {
-            font-family: 'Montserrat', sans-serif;
-            text-transform: uppercase;
+            font-family: "proxima nova";
+            //text-transform: uppercase;
             font-size: 17px;
+            border: 1px solid #f5f5f5;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+            padding: 8px 10px;
+            width: 220px;
+            border-radius: 5px;
 
         }
 
         .cuentaContainer {
             display: flex;
             justify-content: space-between;
+            flex-direction: column;
             width: 220px;
 
             .pagar,
             .eliminar {
-                font-family: 'Montserrat', sans-serif;
-                text-transform: uppercase;
-                font-size: 12px;
-                padding: 8px 12px;
+                font-family: "proxima nova";
+                //text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 600;
+                padding: 8px 10px;
                 margin: 10px 0;
-                border: solid #4b4b4b9e;
-                background-color: #00a200;
                 border-radius: 5px;
                 color: #fff;
+                background-color: #3483fa;
+                border-color: transparent;
+                color: #fff;
+                cursor: pointer;
             }
 
             .pagar:hover {
-                background-color: #00c900;
+                background-color: #2968C8;
                 transition: 0.7s ease;
             }
 
             .eliminar {
-                background-color: red;
+                color: #3483fa;
+                background-color: rgba(65, 137, 230, .15);
+                ;
 
             }
 
             .eliminar:hover {
-                background-color: #ba0000;
+                background-color: rgba(41, 100, 176, 0.15);
                 transition: 0.7s ease;
             }
         }
@@ -155,12 +179,12 @@ main {
         }
 
         .botonVolver {
-            font-family: 'Montserrat', sans-serif;
-            text-transform: uppercase;
-            font-size: 12px;
+            font-family: "proxima nova";
+            //text-transform: uppercase;
+            font-size: 15px;
             padding: 8px 12px;
             margin: 10px 0;
-            border: solid #4b4b4b9e;
+            border-color: transparent;
             background-color: #4b4b4b9e;
             border-radius: 5px;
             transition: 0.5s ease;
@@ -173,22 +197,24 @@ main {
 
             }
         }
+
         .botonVolver:hover {
             background-color: black;
-    
+
         }
     }
 
     .botonVolverDos {
-        font-family: 'Montserrat', sans-serif;
-        text-transform: uppercase;
-        font-size: 12px;
-        padding: 8px 12px;
+        font-family: 'proxima nova';
+        //text-transform: uppercase;
+        font-size: 15px;
+        padding: 8px 10px;
         margin: 10px 0;
-        border: solid #4b4b4b9e;
+        border-color: transparent;
         background-color: #4b4b4b9e;
         border-radius: 5px;
         transition: 0.5s ease;
+        width: 220px;
 
         a {
             text-decoration: none;
@@ -199,6 +225,6 @@ main {
     }
 
     .botonVolverDos:hover {
-        background-color: black;
+        background-color: rgba(45, 45, 45, 0.711);
     }
 }

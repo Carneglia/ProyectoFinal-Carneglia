@@ -44,7 +44,7 @@ let incrementar = (id) => {
     else {
         buscador.item += 1;
     }
-    
+
 
 
     // console.log(carrito);
@@ -64,7 +64,7 @@ let quitar = (id) => {
     else {
         buscador.item -= 1;
     }
-    agregar(itemSeleccionado); 
+    agregar(itemSeleccionado);
 
     carrito = carrito.filter((x) => x.item !== 0);
 
@@ -87,4 +87,5 @@ let calculo = () => {
 
 };
 calculo();
+
 

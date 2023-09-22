@@ -7,6 +7,7 @@
         margin-bottom: 30px;
         position: fixed;
         width: 100%;
+        z-index: 1;
 
         .titulos {
             text-align: center;
@@ -50,8 +51,9 @@
                     top: 2px;
                     right: 6px;
                     background-color: #d10202e8;
-                    padding: 2px;
+                    padding: 3px;
                     border-radius: 20%;
+                    font-family: "proxima nova";
                 }
 
                 .bi-bag-heart {
