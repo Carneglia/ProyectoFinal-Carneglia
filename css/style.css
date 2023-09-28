@@ -287,6 +287,119 @@ main {
   main .productosCarrito {
     grid-template-columns: repeat(1, 350px); } }
 
+.mainContacto {
+  width: 100%; }
+  .mainContacto h2 {
+    font-family: "Montserrat";
+    text-transform: uppercase; }
+  .mainContacto p {
+    max-width: 100vh;
+    margin-top: 20px; }
+  .mainContacto .formContainer {
+    width: 150vh;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto; }
+    .mainContacto .formContainer .form-box {
+      width: 70%;
+      margin: 10px;
+      padding: 10px;
+      border: solid #e3e3e3;
+      display: flex;
+      flex-direction: column; }
+      .mainContacto .formContainer .form-box label {
+        margin: 5px 0;
+        font-size: 18px; }
+      .mainContacto .formContainer .form-box input {
+        padding-left: 5px;
+        border-radius: 5px;
+        border: solid #e8e8e8;
+        color: #212121;
+        font-size: 16px; }
+      .mainContacto .formContainer .form-box input:hover {
+        border-color: #3483fa; }
+      .mainContacto .formContainer .form-box textarea {
+        padding-left: 5px;
+        border-radius: 5px;
+        border: solid #e8e8e8;
+        font-size: 16px; }
+      .mainContacto .formContainer .form-box textarea:hover {
+        border-color: #3483fa; }
+      .mainContacto .formContainer .form-box .send-button {
+        width: 70px;
+        height: 40px;
+        font-weight: 600;
+        background-color: #3483fa;
+        color: white;
+        margin: 10px 0;
+        padding-right: 2px; }
+      .mainContacto .formContainer .form-box .send-button:hover {
+        background-color: #2968C8; }
+
+@media (max-width: 1000px) {
+  .mainContacto p {
+    max-width: 70vh; }
+  .mainContacto .formContainer {
+    width: 100vh; } }
+
+@media (max-width: 700px) {
+  .mainContacto p {
+    max-width: 50vh; }
+  .mainContacto .formContainer {
+    width: 70vh; } }
+
+@media (max-width: 500px) {
+  .mainContacto p {
+    max-width: 40vh; }
+  .mainContacto .formContainer {
+    width: 50vh; } }
+
+@media (max-width: 380px) {
+  .mainContacto p {
+    max-width: 35vh; }
+  .mainContacto .formContainer {
+    width: 45vh; } }
+
+.footer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  margin-top: 15px; }
+  .footer .hrFooter {
+    width: 40;
+    font-size: 5px; }
+  .footer .grupoUno {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px; }
+    .footer .grupoUno a {
+      text-decoration: none;
+      color: #fff; }
+    .footer .grupoUno a:hover {
+      font-weight: 600; }
+    .footer .grupoUno .instagram {
+      transition: 0.7s ease; }
+    .footer .grupoUno .instagram:hover {
+      padding: 5px;
+      border-radius: 5px;
+      font-weight: 200;
+      background: #f09433;
+      background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 ); }
+  .footer .grupoDos {
+    padding: 15px;
+    text-align: center;
+    color: #fff; }
+
+main {
+  width: 100%;
+  height: 100%; }
+
 .bannerArea {
   width: 100%;
   height: 100vh;

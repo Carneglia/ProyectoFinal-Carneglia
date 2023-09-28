@@ -1,0 +1,123 @@
+.mainContacto {
+    width: 100%;
+
+    h2 {
+        font-family: $mont;
+        text-transform: uppercase;
+    }
+
+    p {
+        max-width: 100vh;
+        margin-top: 20px;
+    }
+
+    .formContainer {
+        width: 150vh;
+        display: flex;
+        justify-content: center;
+        margin: 20px auto;
+
+        .form-box {
+            width: 70%;
+            margin: 10px;
+            padding: 10px;
+            border: solid #e3e3e3;
+            display: flex;
+            flex-direction: column;
+            
+
+            label {
+                margin: 5px 0;
+                font-size: 18px;
+            }
+
+            input {
+                padding-left: 5px;
+                border-radius: 5px;
+                border: solid rgb(232, 232, 232);
+                color: #212121;
+                font-size: 16px;
+            }
+
+            input:hover {
+                border-color: #3483fa;
+            }
+
+            textarea {
+                padding-left: 5px;
+                border-radius: 5px;
+                border: solid #e8e8e8;
+                font-size: 16px;
+            }
+
+            textarea:hover {
+                border-color: #3483fa;
+            }
+
+            .send-button {
+                width: 70px;
+                height: 40px;
+                font-weight: 600;
+                background-color: #3483fa;
+                color: white;
+                margin: 10px 0;
+                padding-right: 2px;
+            }
+
+            .send-button:hover {
+                background-color: #2968C8;
+                // border-color: #1c1c1d;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .mainContacto {
+        p {
+            max-width: 70vh;
+        }
+
+        .formContainer {
+            width: 100vh;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .mainContacto {
+        p {
+            max-width: 50vh;
+
+        }
+
+        .formContainer {
+            width: 70vh;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .mainContacto {
+        p {
+            max-width: 40vh;
+
+        }
+
+        .formContainer {
+            width: 50vh;
+        }
+    }
+}
+@media (max-width: 380px) {
+    .mainContacto {
+        p {
+            max-width: 35vh;
+
+        }
+        .formContainer {
+            width: 45vh;
+        }
+    }
+}

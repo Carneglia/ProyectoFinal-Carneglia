@@ -1,0 +1,50 @@
+.footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    margin-top: 15px;
+
+    .hrFooter {
+        width: 40;
+        font-size: 5px;
+    }
+
+    .grupoUno {
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        a:hover{
+            font-weight: 600;
+        }
+
+        .instagram {
+            transition: 0.7s ease;            
+        }
+
+        .instagram:hover {
+            padding:5px;
+            border-radius: 5px;
+            font-weight: 200;
+            background: #f09433; 
+            background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+            background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+           }
+    }
+
+    .grupoDos {
+        padding: 15px;
+        text-align: center;
+        color: #fff;
+    }
+
+}
