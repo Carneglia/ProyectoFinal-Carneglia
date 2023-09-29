@@ -43,7 +43,8 @@ let generarItemCarrito = () => {
         }).join("");
     }
     else {
-       
+       let boton = document.getElementById("botonVolverDos");
+       boton.style = "display:none;"
         productosCarrito.innerHTML = ``
         etiqueta.innerHTML = `<h3>Su carrito está vacío</h3>
 <img src="../recursos/images/gatito.jpg" alt="foto gatito">

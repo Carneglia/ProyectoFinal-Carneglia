@@ -10,7 +10,7 @@ let generarShop = () => {
         let buscador = carrito.find((x) => x.id === id) || [];
         return ` 
             <article id=pruduct-id-${id} class="item" >
-                <img onclick="abrir()" src=${img}>
+                <img src=${img}>
                 <div class="detalles">
                     <h2>${nombre}</h2>
                     <p>${desc}</p>
@@ -88,38 +88,4 @@ let calculo = () => {
 
 };
 calculo();
-
-
-let abrir = () => {
-    shop.innerHTML = productoStorage.map((x) => {
-        let { id, item } = x;
-        let buscador = shopItemsInfo.find((y) => y.id === id) || [];
-        let { img, nombre, precio } = buscador;
-        return `
-        <div class = "itemCarrito" > 
-            <img src="${img}" id= "imagenCarrito">
-        
-            <div class="detalles">
-                <div class="tituloPrecio">
-                    <h4>
-                        <p class="nombre">${nombre}</p>
-                        <p class="precio">$ ${precio}</p>
-                    </h4>
-                    <i onclick="eliminarProducto(${id})" class="bi bi-x-square"></i>
-                </div>
-                <div class="botones">
-                <p> Cantidad: </p>
-                        <i onclick="quitar(${id})" class="bi bi-bag-dash"></i>
-                    <div id=${id} class="cantidad">${item}</div>
-                        <i onclick="incrementar(${id})" class="bi bi-bag-plus"></i>
-                </div>
-                <h3> Total productos: $ ${item * buscador.precio}</h3>
-            </div>
-        </div>
-        `
-    }).join("");
-}
-let idImagen = document.querySelectorAll(img)
-idImagen.addEventListener("click", abrir)
-console.log(abrir);
 

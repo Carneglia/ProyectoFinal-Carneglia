@@ -256,6 +256,7 @@ main {
       font-size: 15px;
       padding: 8px 12px;
       margin: 10px 0;
+      margin-bottom: 40px;
       border-color: transparent;
       background-color: #4b4b4b9e;
       border-radius: 5px;
@@ -305,6 +306,7 @@ main {
       margin: 10px;
       padding: 10px;
       border: solid #e3e3e3;
+      border-radius: 15px;
       display: flex;
       flex-direction: column; }
       .mainContacto .formContainer .form-box label {
@@ -315,7 +317,8 @@ main {
         border-radius: 5px;
         border: solid #e8e8e8;
         color: #212121;
-        font-size: 16px; }
+        font-size: 16px;
+        margin-bottom: 8px; }
       .mainContacto .formContainer .form-box input:hover {
         border-color: #3483fa; }
       .mainContacto .formContainer .form-box textarea {
@@ -325,6 +328,8 @@ main {
         font-size: 16px; }
       .mainContacto .formContainer .form-box textarea:hover {
         border-color: #3483fa; }
+      .mainContacto .formContainer .form-box small {
+        margin-top: 7px; }
       .mainContacto .formContainer .form-box .send-button {
         width: 70px;
         height: 40px;
@@ -340,7 +345,9 @@ main {
   .mainContacto p {
     max-width: 70vh; }
   .mainContacto .formContainer {
-    width: 100vh; } }
+    width: 100vh; }
+    .mainContacto .formContainer .form-box {
+      border: solid #ffc82549; } }
 
 @media (max-width: 700px) {
   .mainContacto p {
