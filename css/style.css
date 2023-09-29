@@ -338,7 +338,8 @@ main {
         color: white;
         margin: 10px 0;
         padding-right: 2px;
-        text-align: center; }
+        text-align: center;
+        border-radius: 5px; }
       .mainContacto .formContainer .form-box .send-button:hover {
         background-color: #2968C8; }
 
