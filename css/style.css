@@ -337,7 +337,8 @@ main {
         background-color: #3483fa;
         color: white;
         margin: 10px 0;
-        padding-right: 2px; }
+        padding-right: 2px;
+        text-align: center; }
       .mainContacto .formContainer .form-box .send-button:hover {
         background-color: #2968C8; }
 
