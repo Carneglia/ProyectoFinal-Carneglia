@@ -1,6 +1,6 @@
 let carrito = JSON.parse(localStorage.getItem("datos")) || [];
 
-const cargarCarritoLS = () =>{
+const cargarCarritoLS = () => {
     return JSON.parse(localStorage.getItem("datos")) || [];
 }
 
@@ -18,19 +18,19 @@ const cargarProductoLS = () => {
 }
 
 const generarProductoShop = () => {
-   
+
     const idProducto = cargarProductoLS();
     const producto = buscarProducto(idProducto);
     let { id, nombre, precio, descXL, img } = producto;
-    
-    let buscador = carrito.find ((x) => x.id === id) || []; 
+
+    let buscador = carrito.find((x) => x.id === id) || [];
 
     document.getElementById("imagenProducto").src = img;
     document.getElementById("nombreProducto").innerHTML = nombre;
-    
+
     document.getElementById("descripcionProducto").innerHTML = descXL;
     document.getElementById("precioProductoDesc").innerHTML = `$  ${precio}`;
-    document.getElementById("botonAgregar").innerHTML =`  <i onclick="quitar(${id})" class="bi bi-bag-dash"></i>
+    document.getElementById("botonAgregar").innerHTML = `  <i onclick="quitar(${id})" class="bi bi-bag-dash"></i>
   
     <div id=${id} class="cantidad">
     ${buscador.item === undefined ? 0 : buscador.item}</div>
@@ -39,7 +39,7 @@ const generarProductoShop = () => {
    </div>`;
 
     document.getElementById("precioProductoDesc").innerHTML = `$ ${precio}`;
-  
+
 }
 generarProductoShop();
 
@@ -93,3 +93,21 @@ const calculo = () => {
 
 };
 calculo();
+
+const container = document.getElementById("imgContainer");
+const img = document.querySelector("img");
+
+container.addEventListener("click", (e) => {
+    const x = e.clientX - e.target.offsetLeft;
+    const y = e.clientY - e.target.offsetTop;
+
+    console.log(x, y)
+
+    img.style.transformOrigin = `${x}px ${y}px `;
+    img.style.transform = "scale(2)";
+})
+
+container.addEventListener("mouseleave", () => {
+    img.style.transformOrigin = "center";
+    img.style.transform = "scale(1)"
+})
