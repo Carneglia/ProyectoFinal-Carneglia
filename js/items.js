@@ -25,14 +25,16 @@ const generarProductoShop = () => {
    
     document.getElementById("imagenProducto").src = img;
     document.getElementById("nombreProducto").innerHTML = nombre;
+    
     document.getElementById("descripcionProducto").innerHTML = descXL;
+    document.getElementById("precioProductoDesc").innerHTML = `$  ${precio}`;
     document.getElementById("botonAgregar").innerHTML =`  <i onclick="quitar(${id})" class="bi bi-bag-dash"></i>
     <div id=${id === undefined ? 0 : id} class="cantidad">
     0</div>
     <i onclick="incrementar(${id})" class="bi bi-bag-plus"></i>
    </div>`;
-   document.getElementById("nombreProductoDesc").innerHTML = nombre;
-   document.getElementById("precioProductoDesc").innerHTML = `$ ${precio}`;
+     //document.getElementById("nombreProductoDesc").innerHTML = nombre;
+    document.getElementById("precioProductoDesc").innerHTML = `$ ${precio}`;
   
 }
 generarProductoShop();
