@@ -10,6 +10,9 @@ let calculo = () => {
 
 };
 calculo();
+const guardarProductoLS = (id) => {
+    localStorage.setItem("producto", JSON.stringify(id));
+}
 
 let generarItemCarrito = () => {
     if (carrito.length !== 0) {
@@ -19,8 +22,8 @@ let generarItemCarrito = () => {
             let { img, nombre, precio } = buscador;
             return `
             <div class = "itemCarrito" > 
-                <img src="${img}" id= "imagenCarrito">
-            
+                
+                <a href="./items.html" onclick="guardarProductoLS(${id})"><img src="${img}" id= "imagenCarrito"></a> 
                 <div class="detalles">
                     <div class="tituloPrecio">
                         <h4>

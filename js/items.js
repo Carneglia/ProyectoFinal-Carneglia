@@ -22,25 +22,26 @@ const generarProductoShop = () => {
     const idProducto = cargarProductoLS();
     const producto = buscarProducto(idProducto);
     let { id, nombre, precio, descXL, img } = producto;
-   
+    
+    let buscador = carrito.find ((x) => x.id === id) || []; 
+
     document.getElementById("imagenProducto").src = img;
     document.getElementById("nombreProducto").innerHTML = nombre;
     
     document.getElementById("descripcionProducto").innerHTML = descXL;
     document.getElementById("precioProductoDesc").innerHTML = `$  ${precio}`;
     document.getElementById("botonAgregar").innerHTML =`  <i onclick="quitar(${id})" class="bi bi-bag-dash"></i>
-    <div id=${id === undefined ? 0 : id} class="cantidad">
-    0</div>
+  
+    <div id=${id} class="cantidad">
+    ${buscador.item === undefined ? 0 : buscador.item}</div>
+
     <i onclick="incrementar(${id})" class="bi bi-bag-plus"></i>
    </div>`;
-     //document.getElementById("nombreProductoDesc").innerHTML = nombre;
+
     document.getElementById("precioProductoDesc").innerHTML = `$ ${precio}`;
   
 }
 generarProductoShop();
-
-  
-//     document.getElementById("botones").innerHTML = ` `
 
 const incrementar = (id) => {
     let itemSeleccionado = id;
