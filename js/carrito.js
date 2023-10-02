@@ -1,9 +1,8 @@
 let etiqueta = document.getElementById("etiqueta");
 let productosCarrito = document.getElementById("productosCarrito");
 
-// console.log(shopItemsInfo);
 
-let = carrito = JSON.parse(localStorage.getItem("datos")) || [];
+let carrito = JSON.parse(localStorage.getItem("datos")) || [];
 
 let calculo = () => {
     let iconoCarrito = document.getElementById("cantidad")
@@ -100,7 +99,7 @@ let quitar = (id) => {
 
 let agregar = (id) => {
     let buscador = carrito.find((x) => x.id === id)
-    //console.log(buscador.item);
+
     document.getElementById(id).innerHTML = buscador.item;
     calculo();
     totalCuenta();
@@ -129,7 +128,7 @@ let totalCuenta = () => {
             return item * buscador.precio
         })
             .reduce((x, y) => x + y, 0);
-        //console.log(monto)
+
         etiqueta.innerHTML = `
         <h2 class="totalAPagar"> Total a pagar : $ ${monto} </h2>
         <div class="cuentaContainer">

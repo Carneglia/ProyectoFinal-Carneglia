@@ -3,14 +3,17 @@ localStorage.setItem("productos", JSON.stringify(shopItemsInfo));
 let carrito = JSON.parse(localStorage.getItem("datos")) || [];
 let productoStorage = JSON.parse(localStorage.getItem("productos")) || [];
 
+const guardarProductoLS = (id) => {
+    localStorage.setItem("producto", JSON.stringify(id));
+}
 
 let generarShop = () => {
     return (shop.innerHTML = shopItemsInfo.map((x) => {
         let { id, nombre, precio, desc, img } = x;
         let buscador = carrito.find((x) => x.id === id) || [];
         return ` 
-            <article id=pruduct-id-${id} class="item" >
-                <img src=${img}>
+            <article id="pruduct-id-${id}" class="item" >
+            <a href="./items.html" onclick="guardarProductoLS(${id})"><img src=${img}></a> 
                 <div class="detalles">
                     <h2>${nombre}</h2>
                     <p>${desc}</p>
