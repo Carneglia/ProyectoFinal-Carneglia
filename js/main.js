@@ -49,9 +49,6 @@ let incrementar = (id) => {
         buscador.item += 1;
     }
 
-
-
-    // console.log(carrito);
     agregar(itemSeleccionado);
     localStorage.setItem("datos", JSON.stringify(carrito))
 }
@@ -72,15 +69,12 @@ let quitar = (id) => {
 
     carrito = carrito.filter((x) => x.item !== 0);
 
-
-    //console.log(carrito);
     localStorage.setItem("datos", JSON.stringify(carrito));
 };
 
 
 let agregar = (id) => {
     let buscador = carrito.find((x) => x.id === id)
-    //console.log(buscador.item);
     document.getElementById(id).innerHTML = buscador.item;
     calculo()
 };
