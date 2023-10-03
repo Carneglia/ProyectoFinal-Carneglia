@@ -9,6 +9,25 @@
         width: 100%;
         z-index: 1;
 
+        .burguer-button {
+            width: 30px;
+            display: none;
+            cursor: pointer;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            li {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+      
+
         .titulos {
             text-align: center;
             margin: 10px;
@@ -65,5 +84,36 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        .nav {
+            padding-bottom: 12px;
+            ul {
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                padding: 0;
+                position: absolute;
+                top: 80px;
+                text-align: center;
+            }
+
+            .burguer-button {
+                display: block;
+                position: absolute;
+                top: 25px;
+                right: 70px;
+            }
+            #menuList {
+                overflow: hidden;
+                transition: 0.5s;
+                z-index: 2;
+            }
+        }
+
     }
 }

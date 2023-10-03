@@ -95,7 +95,7 @@ const calculo = () => {
 calculo();
 
 const container = document.getElementById("imgContainer");
-const img = document.querySelector("img");
+const img = document.querySelector("#imagenProducto");
 
 container.addEventListener("click", (e) => {
     const x = e.clientX - e.target.offsetLeft;
