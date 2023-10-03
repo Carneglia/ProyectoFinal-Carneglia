@@ -171,8 +171,8 @@ main {
   .header .nav .burguer-button {
     display: block;
     position: absolute;
-    top: 25px;
-    right: 70px;
+    top: 24px;
+    right: 75px;
     width: 23px; }
   .header .nav #menuList {
     overflow: hidden;
@@ -182,10 +182,11 @@ main {
     text-decoration: none; }
     .header .nav a .carrito .cantidad {
       top: 4px;
-      right: 6px;
+      right: 10px;
       background-color: #d10202e8;
-      padding: 1px; }
+      padding: 2px; }
     .header .nav a .carrito .bi-bag-heart {
+      margin-right: 8px;
       padding: 5px;
       font-size: 22px; }
   .header .nav .titulos h1 {
@@ -211,7 +212,8 @@ main {
       transition: 0.7s ease;
       background-color: #fff; }
       main .productosCarrito .itemCarrito img {
-        width: 110px;
+        width: 100%;
+        height: 100%;
         border-radius: 5px; }
       main .productosCarrito .itemCarrito .botones {
         display: flex;
@@ -324,7 +326,6 @@ main {
     main .etiqueta .botonVolver:hover {
       background-color: black; }
   main .botonVolverDos {
-    font-family: 'proxima nova';
     font-size: 15px;
     padding: 8px 10px;
     margin: 10px 0;

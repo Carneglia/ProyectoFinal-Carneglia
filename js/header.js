@@ -5,7 +5,7 @@ menuList.style.height = "0px";
 function togglemenu() {
 
     if (menuList.style.height == "0px") {
-        menuList.style.height = "150px";
+        menuList.style.height = "180px";
     }
     else {
         menuList.style.height = "0px";
