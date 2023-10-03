@@ -148,31 +148,50 @@ main {
         font-size: 24px; }
 
 @media (max-width: 600px) {
-  .header .nav {
-    padding-bottom: 12px; }
-    .header .nav ul {
-      display: block;
-      width: 100%;
-      height: 100%;
-      background-color: black;
-      padding-bottom: 0px;
-      position: absolute;
-      top: 80px;
-      text-align: center; }
-      .header .nav ul li {
-        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
-        padding: 3px 0; }
-        .header .nav ul li a {
-          font-size: 16px; }
-    .header .nav .burguer-button {
-      display: block;
-      position: absolute;
-      top: 25px;
-      right: 70px; }
-    .header .nav #menuList {
-      overflow: hidden;
-      transition: 0.5s;
-      z-index: 2; } }
+  .header .nav ul {
+    display: block;
+    width: 100%;
+    background-color: black;
+    padding-bottom: 0px;
+    position: absolute;
+    top: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .header .nav ul li {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      width: 60%;
+      padding: 3px 0;
+      border-radius: 10px; }
+      .header .nav ul li a {
+        font-size: 18px; }
+    .header .nav ul li:hover {
+      border: 2px solid rgba(255, 255, 255, 0.1); }
+  .header .nav .burguer-button {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 70px;
+    width: 23px; }
+  .header .nav #menuList {
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 2; }
+  .header .nav a {
+    text-decoration: none; }
+    .header .nav a .carrito .cantidad {
+      top: 4px;
+      right: 6px;
+      background-color: #d10202e8;
+      padding: 1px; }
+    .header .nav a .carrito .bi-bag-heart {
+      padding: 5px;
+      font-size: 22px; }
+  .header .nav .titulos h1 {
+    font-size: 20px; }
+  .header .nav .titulos h2 {
+    font-size: 15px; } }
 
 main {
   display: flex;
@@ -491,16 +510,33 @@ main {
       border-radius: 5px;
       transition: 0.7s ease; }
     .shopContainer .itemShop .container .irAlCarrito {
+      font-size: 15px;
       font-weight: 600;
       padding: 8px 10px;
       margin: 10px 0;
       border-radius: 5px;
+      width: 220px;
       background-color: #3483fa;
       border-color: transparent;
       cursor: pointer; }
       .shopContainer .itemShop .container .irAlCarrito a {
         color: #fff;
         text-decoration: none; }
+    .shopContainer .itemShop .container .volver {
+      font-size: 15px;
+      padding: 8px 10px;
+      margin: 10px 0;
+      border-color: transparent;
+      background-color: #4b4b4b9e;
+      border-radius: 5px;
+      transition: 0.5s ease;
+      width: 220px;
+      font-weight: 600; }
+      .shopContainer .itemShop .container .volver a {
+        text-decoration: none;
+        color: #fff; }
+    .shopContainer .itemShop .container .volver:hover {
+      background-color: rgba(45, 45, 45, 0.711); }
     .shopContainer .itemShop .container .contenidoProducto h3 {
       font-size: 18px;
       text-transform: uppercase;

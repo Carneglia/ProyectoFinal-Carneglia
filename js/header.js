@@ -1,13 +1,13 @@
 const menuList = document.getElementById("menuList");
 
-menuList.style.maxHeight = "0px";
+menuList.style.height = "0px";
 
 function togglemenu() {
 
-    if (menuList.style.maxHeight == "0px") {
-        menuList.style.maxHeight = "100%";
+    if (menuList.style.height == "0px") {
+        menuList.style.height = "150px";
     }
     else {
-        menuList.style.maxHeight = "0px";
+        menuList.style.height = "0px";
     }
 }
