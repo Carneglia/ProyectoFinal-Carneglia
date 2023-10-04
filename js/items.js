@@ -21,7 +21,7 @@ const generarProductoShop = () => {
 
     const idProducto = cargarProductoLS();
     const producto = buscarProducto(idProducto);
-    let { id, nombre, precio, descXL, img } = producto;
+    let { id, nombre, precio, descXL, img, info, material } = producto;
 
     let buscador = carrito.find((x) => x.id === id) || [];
 
@@ -39,6 +39,9 @@ const generarProductoShop = () => {
    </div>`;
 
     document.getElementById("precioProductoDesc").innerHTML = `$ ${precio}`;
+    document.getElementById("info").innerHTML = info;
+    document.getElementById("material").innerHTML = `Material: ${material} ` ;
+
 
 }
 generarProductoShop();
