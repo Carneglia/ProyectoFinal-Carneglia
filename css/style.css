@@ -109,7 +109,8 @@ main {
       color: #fff; }
   .header .nav .titulos {
     text-align: center;
-    margin: 10px; }
+    margin: 10px;
+    margin-left: 80px; }
     .header .nav .titulos a {
       text-decoration: none; }
       .header .nav .titulos a h1 {
@@ -147,7 +148,7 @@ main {
         padding: 8px;
         font-size: 24px; }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .header .nav ul {
     display: block;
     width: 100%;
@@ -172,7 +173,7 @@ main {
     display: block;
     position: absolute;
     top: 24px;
-    right: 75px;
+    left: 20px;
     width: 23px; }
   .header .nav #menuList {
     overflow: hidden;
@@ -189,10 +190,12 @@ main {
       margin-right: 8px;
       padding: 5px;
       font-size: 22px; }
-  .header .nav .titulos h1 {
-    font-size: 20px; }
-  .header .nav .titulos h2 {
-    font-size: 15px; } }
+  .header .nav .titulos {
+    margin-left: 60px; }
+    .header .nav .titulos h1 {
+      font-size: 20px; }
+    .header .nav .titulos h2 {
+      font-size: 15px; } }
 
 main {
   display: flex;
