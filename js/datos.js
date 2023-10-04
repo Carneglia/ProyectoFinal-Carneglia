@@ -1,7 +1,7 @@
 let shopItemsInfo = [
     {
         id: 1, nombre: "flora ring", precio: 36000, desc: "Belleza / Renovación.", descXL:
-            "Este exquisito anillo de plata hecho a mano es una obra maestra de la artesanía. Cada detalle ha sido cuidadosamente diseñado y elaborado por un habilidoso artesano, lo que lo convierte en una pieza única y especial. La plata de ley 925 de alta calidad utilizada en su creación brilla con un brillo suave y atemporal que complementará cualquier estilo.", img: "../recursos/images/anilloFlora.jpg",
+            "Este exquisito anillo de plata hecho a mano es una obra maestra de la artesanía. La plata de ley 925 de alta calidad utilizada en su creación brilla con un brillo suave y atemporal que complementará cualquier estilo.", img: "../recursos/images/anilloFlora.jpg",
              info:" <br><b>Cómo sacar la medida de tu anillo:</b> <br> Toma la medida interna de un anillo que te quede bien, chequealo en la tablita y mandas el talle. (Ponerlo en comentarios)",
              material: "Plata 925"
     },

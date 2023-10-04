@@ -473,98 +473,113 @@ main {
     text-align: center;
     color: #fff; }
 
-.shopContainer .itemShop {
-  display: grid;
-  grid-template-rows: 1fr 0.5fr;
-  justify-content: center;
-  padding-top: 53px;
-  background-color: #ffbced1a;
-  justify-items: center; }
-  .shopContainer .itemShop .container {
-    max-width: 500px;
-    border: 1px solid #f5f5f5;
-    border-radius: 15px;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
-    transition: 0.7s ease;
-    background-color: #fff;
-    margin: 20px 10px;
-    text-align: center; }
-    .shopContainer .itemShop .container .infoContainer {
-      margin: 20px; }
-    .shopContainer .itemShop .container .imgContainer {
-      overflow: hidden;
+.shopContainer {
+  width: 100%; }
+  .shopContainer .itemShop {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding-top: 53px;
+    background-color: #ffbced1a;
+    justify-items: center; }
+    .shopContainer .itemShop .infoCompra-container {
+      width: 90%;
+      border: 1px solid #f5f5f5;
+      border-radius: 15px;
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+      transition: 0.7s ease;
+      background-color: #fff;
+      margin: 20px 10px;
+      text-align: center; }
+      .shopContainer .itemShop .infoCompra-container .botonAgregar {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 5px 10px;
+        margin: 10px 75px;
+        border-radius: 5px;
+        background-color: #f5f5f5;
+        border-color: transparent;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between; }
+        .shopContainer .itemShop .infoCompra-container .botonAgregar .bi-bag-dash {
+          color: red; }
+        .shopContainer .itemShop .infoCompra-container .botonAgregar .bi-bag-plus {
+          color: green; }
+      .shopContainer .itemShop .infoCompra-container .bi-bag-plus:hover {
+        background-color: #00b4003f;
+        border-radius: 5px;
+        transition: 0.7s ease; }
+      .shopContainer .itemShop .infoCompra-container .btn-ad-at {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .shopContainer .itemShop .infoCompra-container .btn-ad-at .irAlCarrito {
+          font-size: 15px;
+          font-weight: 600;
+          padding: 8px 10px;
+          margin: 10px 0;
+          border-radius: 5px;
+          width: 220px;
+          background-color: #3483fa;
+          border-color: transparent;
+          cursor: pointer; }
+          .shopContainer .itemShop .infoCompra-container .btn-ad-at .irAlCarrito a {
+            color: #fff;
+            text-decoration: none; }
+        .shopContainer .itemShop .infoCompra-container .btn-ad-at .volver {
+          font-size: 15px;
+          padding: 8px 10px;
+          margin: 10px 0;
+          border-color: transparent;
+          background-color: #4b4b4b9e;
+          border-radius: 5px;
+          transition: 0.5s ease;
+          width: 220px;
+          font-weight: 600; }
+          .shopContainer .itemShop .infoCompra-container .btn-ad-at .volver a {
+            text-decoration: none;
+            color: #fff; }
+        .shopContainer .itemShop .infoCompra-container .btn-ad-at .volver:hover {
+          background-color: rgba(45, 45, 45, 0.711); }
+    .shopContainer .itemShop .container {
+      max-width: 500px;
+      border: 1px solid #f5f5f5;
+      border-radius: 15px;
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+      transition: 0.7s ease;
+      background-color: #fff;
+      margin: 20px 10px;
+      text-align: center; }
+      .shopContainer .itemShop .container .infoContainer {
+        margin: 20px; }
+      .shopContainer .itemShop .container .imgContainer {
+        overflow: hidden;
+        border-radius: 15px; }
+        .shopContainer .itemShop .container .imgContainer img {
+          width: 75%;
+          border-radius: 15px;
+          transition: 0.7s ease;
+          transform-origin: center;
+          object-fit: cover;
+          cursor: zoom-in; }
+      .shopContainer .itemShop .container .contenidoProducto h3 {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 10px auto; }
+    .shopContainer .itemShop p {
+      margin: auto;
+      padding: 10px;
+      margin: 0 20px; }
+    .shopContainer .itemShop .p-importante {
+      background-color: #ffc82549;
       border-radius: 15px; }
-      .shopContainer .itemShop .container .imgContainer img {
-        width: 100%;
-        border-radius: 15px;
-        transition: 0.7s ease;
-        transform-origin: center;
-        object-fit: cover;
-        cursor: zoom-in; }
-    .shopContainer .itemShop .container .botonAgregar {
-      font-size: 16px;
-      font-weight: 600;
-      padding: 5px 10px;
-      margin: 10px 20px;
-      border-radius: 5px;
-      background-color: #f5f5f5;
-      border-color: transparent;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between; }
-      .shopContainer .itemShop .container .botonAgregar .bi-bag-dash {
-        color: red; }
-      .shopContainer .itemShop .container .botonAgregar .bi-bag-plus {
-        color: green; }
-    .shopContainer .itemShop .container .bi-bag-plus:hover {
-      background-color: #00b4003f;
-      border-radius: 5px;
-      transition: 0.7s ease; }
-    .shopContainer .itemShop .container .irAlCarrito {
-      font-size: 15px;
-      font-weight: 600;
-      padding: 8px 10px;
-      margin: 10px 0;
-      border-radius: 5px;
-      width: 220px;
-      background-color: #3483fa;
-      border-color: transparent;
-      cursor: pointer; }
-      .shopContainer .itemShop .container .irAlCarrito a {
-        color: #fff;
-        text-decoration: none; }
-    .shopContainer .itemShop .container .volver {
-      font-size: 15px;
-      padding: 8px 10px;
-      margin: 10px 0;
-      border-color: transparent;
-      background-color: #4b4b4b9e;
-      border-radius: 5px;
-      transition: 0.5s ease;
-      width: 220px;
-      font-weight: 600; }
-      .shopContainer .itemShop .container .volver a {
-        text-decoration: none;
-        color: #fff; }
-    .shopContainer .itemShop .container .volver:hover {
-      background-color: rgba(45, 45, 45, 0.711); }
-    .shopContainer .itemShop .container .contenidoProducto h3 {
-      font-size: 18px;
+    .shopContainer .itemShop h3 {
+      font-size: 24px;
       text-transform: uppercase;
       font-weight: bold;
       margin: 10px auto; }
-  .shopContainer .itemShop p {
-    margin: auto;
-    padding: 10px;
-    margin: 0 20px; }
-  .shopContainer .itemShop .p-importante {
-    background-color: #ffc82549;
-    border-radius: 15px; }
-  .shopContainer .itemShop h3 {
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin: 10px auto; }
 
 @media (min-width: 1000px) {
   .shopContainer {
