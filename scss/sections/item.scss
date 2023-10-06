@@ -1,5 +1,6 @@
 .shopContainer {
     width: 100%;
+
     .itemShop {
         display: grid;
         grid-template-columns: 1fr;
@@ -7,43 +8,71 @@
         padding-top: 53px;
         background-color: #ffbced1a;
         justify-items: center;
-       
+
 
         .infoCompra-container {
-            width: 90%;
-            border: 1px solid #f5f5f5;
-            border-radius: 15px;
-            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
-            transition: 0.7s ease;
-            background-color: #fff;
-            margin: 20px 10px;
-            text-align: center;
+          h4{
+            margin-bottom: 10px;
+          }
+            .calcularEnvioContainer {
 
-            .botonAgregar {
-                font-size: 16px;
-                font-weight: 600;
-                padding: 5px 10px;
-                margin: 10px 75px;
-                border-radius: 5px;
-                background-color: #f5f5f5;
-                border-color: transparent;
-                cursor: pointer;
-                display: flex;
-                justify-content: space-between;
+                .calcular-envio {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-bottom: 10px;
 
-                .bi-bag-dash {
-                    color: red;
-                }
+                    .btnCalcularEnvio {
+                        height: 65px;
+                        padding: 0 8px;
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        border: 1px solid #e2e2e2;
 
-                .bi-bag-plus {
-                    color: green
+                    }
+
+                    .input-calcular {
+                        height: 65px;
+                        text-align: center;
+                        border: 1px solid #e2e2e2;
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+
+                    }
                 }
             }
 
-            .bi-bag-plus:hover {
-                background-color: #00b4003f;
-                border-radius: 5px;
-                transition: 0.7s ease;
+            .botonAgregarContainer {
+                width: 220px;
+                margin: auto;
+
+                .botonAgregar {
+                    font-size: 16px;
+                    font-weight: 600;
+                    padding: 5px 10px;
+                    margin-bottom: 10px;
+                    margin-top: 2px;
+                    border-radius: 5px;
+                    background-color: #f5f5f5;
+                    border-color: transparent;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .bi-bag-dash {
+                        color: red;
+                    }
+
+                    .bi-bag-plus {
+                        color: green
+                    }
+                }
+
+                .bi-bag-plus:hover {
+                    background-color: #00b4003f;
+                    border-radius: 5px;
+                    transition: 0.7s ease;
+                }
             }
 
             .btn-ad-at {
@@ -66,6 +95,10 @@
                         color: #fff;
                         text-decoration: none;
                     }
+                }
+                .irAlCarrito:hover {
+                    background-color: #2968C8;
+                    transition: 0.7s ease;
                 }
 
                 .volver {

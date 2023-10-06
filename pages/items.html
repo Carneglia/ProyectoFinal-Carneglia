@@ -39,24 +39,44 @@
     </header>
     <div class="shopContainer">
         <section class="itemShop" id="itemShop">
+            <!-- <div>
+                <ul>
+                    <li>Earring</li>
+                    <li>Ring</li>
+                    <li>Bracelet</li>
+                </ul>
+            </div> -->
             <div class="container">
                 <div class="imgContainer" id="imgContainer">
                     <img id="imagenProducto" class="imagenProducto" src="" alt="">
 
                 </div>
-            </div>
-            <div class="infoCompra-container">
-                <h3 id="nombreProducto"></h3>
-                <h4 id="precioProductoDesc"></h4>
-                <div id="botonAgregar" class="botonAgregar"></div>
-                <div class="btn-ad-at">
-                    <button class="irAlCarrito"><a href="./carrito.html">Ir al Carrito</a></button>
-                    <button class="volver"> <a href="./productos.html"> Volver a Productos</a></button>
 
+                <div class="infoCompra-container">
+                    <h3 id="nombreProducto"></h3>                  
+                    <h4 id="precioProductoDesc"></h4>
+                    <small class="small-cantidad">Cantidad</small>
+                    <div class="botonAgregarContainer">
+                        <div id="botonAgregar" class="botonAgregar"></div>
+                    </div>
+                    
+                   
+                    <div class="btn-ad-at">
+                        <button class="irAlCarrito"><a href="./carrito.html">Ir al Carrito</a></button>
+                        <button class="volver"> <a href="./productos.html"> Volver a Productos</a></button>
+
+                    </div>
+                    <div class="calcularEnvioContainer">
+                        <p>¿Calculamos el costo de envío?</p>
+                        <div class="calcular-envio">
+                            <input type="text" placeholder="Código postal" name="calcularEnvio"
+                                id="calcularEnvio" class="input-calcular">
+                            <button id="btnCalcularEnvio" class="btnCalcularEnvio">Calcular</button>
+                        </div>
+                        <div id="c-e-resultado" class="c-e-resultado"></div>
+                    </div>
                 </div>
-
             </div>
-
 
             <div class="infoContainer">
 

@@ -29,8 +29,9 @@ const generarProductoShop = () => {
     document.getElementById("nombreProducto").innerHTML = nombre;
 
     document.getElementById("descripcionProducto").innerHTML = descXL;
-    document.getElementById("precioProductoDesc").innerHTML = `$  ${precio}`;
-    document.getElementById("botonAgregar").innerHTML = `  <i onclick="quitar(${id})" class="bi bi-bag-dash"></i>
+    document.getElementById("precioProductoDesc").innerHTML = `Precio $ ${precio}`;
+    document.getElementById("botonAgregar").innerHTML = `
+     <i onclick="quitar(${id})" class="bi bi-bag-dash"></i>
   
     <div id=${id} class="cantidad">
     ${buscador.item === undefined ? 0 : buscador.item}</div>
@@ -40,11 +41,12 @@ const generarProductoShop = () => {
 
     document.getElementById("precioProductoDesc").innerHTML = `$ ${precio}`;
     document.getElementById("info").innerHTML = info;
-    document.getElementById("material").innerHTML = `Material: ${material} ` ;
+    document.getElementById("material").innerHTML = `Material: ${material} `;
 
 
 }
 generarProductoShop();
+
 
 const incrementar = (id) => {
     let itemSeleccionado = id;
@@ -128,3 +130,46 @@ container.addEventListener("touchmove", () => {
     img.style.transformOrigin = "center";
     img.style.transform = "scale(1)"
 })
+
+
+const calcularEnvio = async () => {
+    const codigoIngresado = document.getElementById("calcularEnvio").value;
+    const url = 'https://correo-argentino1.p.rapidapi.com/calcularPrecio?cpOrigen=1000&cpDestino=' + codigoIngresado + '&provinciaOrigen=AR-B&provinciaDestino=AR-S&peso=2';
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': 'a669bfcf38msh0936fda8236115cp17e030jsn80c666c8fba9',
+            'X-RapidAPI-Host': 'correo-argentino1.p.rapidapi.com'
+        }
+    };
+
+    try {
+        const response = await fetch(url, options);
+        const result = await response.json();
+        console.log(result)
+        const resultado = result.paqarClasico.aDomicilio
+        const resultadoDos = result.paqarClasico.aSucursal
+        const r1 = Math.ceil(resultado)
+        const r2 = Math.ceil(resultadoDos)
+
+
+        contenidoHTML = `
+         <img src="../recursos/images/correo.png" alt="Imagen correo Argentino" width=190>
+         <p> Envío a Domicilio: <b>$ ${r1} </b></p>
+         <p> Retiro en Sucursal: <b>$ ${r2} </b></p>
+        `
+        document.getElementById("c-e-resultado").innerHTML = contenidoHTML;
+    } catch (error) {
+        console.error(error);
+    }
+}
+document.getElementById("btnCalcularEnvio").addEventListener("click", calcularEnvio);
+
+const input = document.getElementById("calcularEnvio");
+
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("btnCalcularEnvio").click();
+  }
+});
