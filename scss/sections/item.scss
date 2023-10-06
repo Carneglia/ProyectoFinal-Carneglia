@@ -24,7 +24,7 @@
 
                     .btnCalcularEnvio {
                         height: 65px;
-                        padding: 0 8px;
+                        padding: 0 15px;
                         border-top-right-radius: 5px;
                         border-bottom-right-radius: 5px;
                         border: 1px solid #e2e2e2;
@@ -33,6 +33,7 @@
 
                     .input-calcular {
                         height: 65px;
+                        width: 150px;
                         text-align: center;
                         border: 1px solid #e2e2e2;
                         border-top-left-radius: 5px;
@@ -81,12 +82,13 @@
                 align-items: center;
 
                 .irAlCarrito {
-                    font-size: 15px;
+                    font-size: 16px;
                     font-weight: 600;
                     padding: 8px 10px;
                     margin: 10px 0;
                     border-radius: 5px;
-                    width: 220px;
+                    width: 255px;
+                    height: 49px;
                     background-color: #3483fa;
                     border-color: transparent;
                     cursor: pointer;
@@ -102,14 +104,15 @@
                 }
 
                 .volver {
-                    font-size: 15px;
+                    font-size: 16px;
                     padding: 8px 10px;
                     margin: 10px 0;
                     border-color: transparent;
                     background-color: #4b4b4b9e;
                     border-radius: 5px;
                     transition: 0.5s ease;
-                    width: 220px;
+                    width: 255px;
+                    height: 49px;
                     font-weight: 600;
 
                     a {
@@ -165,9 +168,6 @@
                     margin: 10px auto;
 
                 }
-
-
-
             }
         }
 

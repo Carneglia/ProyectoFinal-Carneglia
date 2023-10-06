@@ -491,12 +491,13 @@ main {
       padding-bottom: 10px; }
       .shopContainer .itemShop .infoCompra-container .calcularEnvioContainer .calcular-envio .btnCalcularEnvio {
         height: 65px;
-        padding: 0 8px;
+        padding: 0 15px;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
         border: 1px solid #e2e2e2; }
       .shopContainer .itemShop .infoCompra-container .calcularEnvioContainer .calcular-envio .input-calcular {
         height: 65px;
+        width: 150px;
         text-align: center;
         border: 1px solid #e2e2e2;
         border-top-left-radius: 5px;
@@ -529,12 +530,13 @@ main {
       flex-direction: column;
       align-items: center; }
       .shopContainer .itemShop .infoCompra-container .btn-ad-at .irAlCarrito {
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 600;
         padding: 8px 10px;
         margin: 10px 0;
         border-radius: 5px;
-        width: 220px;
+        width: 255px;
+        height: 49px;
         background-color: #3483fa;
         border-color: transparent;
         cursor: pointer; }
@@ -545,14 +547,15 @@ main {
         background-color: #2968C8;
         transition: 0.7s ease; }
       .shopContainer .itemShop .infoCompra-container .btn-ad-at .volver {
-        font-size: 15px;
+        font-size: 16px;
         padding: 8px 10px;
         margin: 10px 0;
         border-color: transparent;
         background-color: #4b4b4b9e;
         border-radius: 5px;
         transition: 0.5s ease;
-        width: 220px;
+        width: 255px;
+        height: 49px;
         font-weight: 600; }
         .shopContainer .itemShop .infoCompra-container .btn-ad-at .volver a {
           text-decoration: none;
