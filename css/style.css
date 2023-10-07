@@ -104,7 +104,8 @@ main {
   .header .nav ul {
     display: flex;
     align-items: center;
-    gap: 20px; }
+    gap: 20px;
+    margin: 0; }
     .header .nav ul li {
       transition: 0.5ms ease; }
       .header .nav ul li a {
@@ -120,7 +121,8 @@ main {
       .header .nav .titulos a h1 {
         font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
-        color: #fff; }
+        color: #fff;
+        font-size: 24px; }
       .header .nav .titulos a h2 {
         font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
@@ -201,9 +203,9 @@ main {
   .header .nav .titulos {
     margin-left: 60px; }
     .header .nav .titulos h1 {
-      font-size: 20px; }
+      font-size: 20px !important; }
     .header .nav .titulos h2 {
-      font-size: 15px; } }
+      font-size: 15px !important; } }
 
 main {
   display: flex;
@@ -632,70 +634,59 @@ main {
     .sobre-nosotros-main .container p {
       margin: 10px; }
 
-main {
-  width: 100%;
-  height: 100%; }
+body {
+  line-height: normal; }
+  body h1 {
+    margin: 0; }
+  body h2 {
+    margin: 0; }
 
-.bannerArea {
+.index-main {
   width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(0deg, #00000003 0%, #00000002 100%), url(../recursos/images/arosDragones.jpg);
-  background-size: cover;
-  background-position: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  padding-top: 62px; }
+  .index-main .bannerArea {
+    width: 100%; }
+
+.footer-main {
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: center; }
-  .bannerArea .contentArea {
-    height: auto;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  margin-top: 0; }
+  .footer-main .hrFooter {
+    width: 40;
+    font-size: 5px;
+    color: white;
+    margin: 0 !important; }
+  .footer-main .grupoUno {
     display: flex;
-    justify-content: center;
-    align-items: center; }
-    .bannerArea .contentArea .contenido {
-      max-height: 100%;
-      text-align: center;
-      position: absolute;
-      top: 30vh; }
-      .bannerArea .contentArea .contenido h1 {
-        font-family: 'Montserrat', sans-serif;
-        text-transform: uppercase;
-        color: #fff;
-        font-size: 70px;
-        background-color: #1616169e;
-        border-radius: 5px;
-        padding: 10px 10px; }
-      .bannerArea .contentArea .contenido h2 {
-        font-size: 30px;
-        color: #fff;
-        background-color: #1616169e;
-        font-family: 'Montserrat', sans-serif;
-        border-radius: 5px;
-        padding-bottom: 10px; }
-      .bannerArea .contentArea .contenido .button {
-        font-family: 'Montserrat', sans-serif;
-        text-transform: uppercase;
-        font-size: 15px;
-        padding: 10px 20px;
-        margin-top: 20px;
-        border: solid #1616169e;
-        border-radius: 5px; }
-        .bannerArea .contentArea .contenido .button a {
-          text-decoration: none;
-          color: black; }
-      .bannerArea .contentArea .contenido .button:hover {
-        background-color: #212121;
-        color: #fff;
-        transition: 0.7s ease; }
-
-@media (max-width: 1000px) {
-  .bannerArea .contentArea .contenido h1 {
-    font-size: 50px; }
-  .bannerArea .contentArea .contenido h2 {
-    font-size: 25px; } }
-
-@media (max-width: 500px) {
-  .bannerArea .contentArea .contenido h1 {
-    font-size: 23px; }
-  .bannerArea .contentArea .contenido h2 {
-    font-size: 18px; } }
+    justify-content: space-around;
+    padding: 15px; }
+    .footer-main .grupoUno a {
+      text-decoration: none;
+      color: #fff; }
+    .footer-main .grupoUno a:hover {
+      font-weight: 600; }
+    .footer-main .grupoUno .instagram {
+      transition: 0.7s ease; }
+    .footer-main .grupoUno .instagram:hover {
+      padding: 5px;
+      border-radius: 5px;
+      font-weight: 200;
+      background: #f09433;
+      background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1); }
+  .footer-main .grupoDos {
+    padding: 15px;
+    text-align: center;
+    color: #fff; }
 
 @font-face {
   font-family: "proxima nova";

@@ -19,6 +19,7 @@
             display: flex;
             align-items: center;
             gap: 20px;
+            margin: 0;
 
             li {
                 transition: 0.5ms ease;
@@ -43,6 +44,7 @@
                     font-family: 'Montserrat', sans-serif;
                     text-transform: uppercase;
                     color: #fff;
+                  font-size: 24px;
                 }
 
                 h2 {
@@ -167,16 +169,15 @@
                 }
             }
           
-
             .titulos {
                 margin-left: 60px;
 
                 h1 {
-                    font-size: 20px;
+                    font-size: 20px!important;
                 }
 
                 h2 {
-                    font-size: 15px;
+                    font-size: 15px!important;
                 }
             }
         }
