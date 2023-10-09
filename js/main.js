@@ -3,18 +3,26 @@ localStorage.setItem("productos", JSON.stringify(shopItemsInfo));
 let carrito = JSON.parse(localStorage.getItem("datos")) || [];
 let productoStorage = JSON.parse(localStorage.getItem("productos")) || [];
 
+const cargarProductosLS = () => {
+    return JSON.parse(localStorage.getItem("productos")) || [];
+}
+
 const guardarProductoLS = (id) => {
     localStorage.setItem("producto", JSON.stringify(id));
 }
+const btnFiltrador = document.querySelectorAll(".filtrador");
+
+
 
 let generarShop = () => {
     return (shop.innerHTML = shopItemsInfo.map((x) => {
-        let { id, nombre, precio, desc, img } = x;
+        let { id, nombre, precio, desc, img, categoria } = x;
         let buscador = carrito.find((x) => x.id === id) || [];
         return ` 
             <article id="pruduct-id-${id}" class="item" >
             <a href="./items.html" onclick="guardarProductoLS(${id})"><img src=${img}></a> 
                 <div class="detalles">
+                ${categoria}
                     <h2>${nombre}</h2>
                     <p>${desc}</p>
                     <div class="precio-cantidad">
@@ -33,6 +41,20 @@ let generarShop = () => {
 };
 
 generarShop();
+
+// btnFiltrador.forEach(boton => {
+//     boton.addEventListener("click", (e) => {
+
+//         btnFiltrador.forEach(boton => boton.classList.remove("active-btn"));
+//         e.currentTarget.classList.add("active-btn");
+
+//         const productosBoton = shopItemsInfo.filter(producto => producto.categoria === e.currentTarget.id)
+        
+//         generarShop(productosBoton)
+
+//     })
+// })
+
 
 let incrementar = (id) => {
     let itemSeleccionado = id;

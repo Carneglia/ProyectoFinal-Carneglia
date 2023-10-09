@@ -1,7 +1,67 @@
 main {
     padding-top: 80px;
     background-color: #ffbced1a;
+
 }
+
+.filterWrapper {
+    width: 100%;
+    overflow: hidden;
+
+    .filterContainer {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0px 10px 20px 10px;
+
+        h3 {
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: $mont;
+        }
+
+        .filters {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+            .filtrador {
+                background: none;
+                cursor: pointer;
+                border: none;
+                text-transform: uppercase;
+                display: inline-block;
+                position: relative;
+                transition: all 0.2s ease-in-out;
+            }
+            .filtrador::after{
+                content: "";
+                position: absolute;
+                top:115%;
+                left: 50%;
+                transform: translate(-50%);
+                height: 1px;
+                width: 0;
+                background-color: #2968C8;
+                transition: all 0.2s ease-in-out;
+            }
+            .filtrador:hover{
+                color: #2968C8;
+            }
+            .filtrador:hover::after{
+                width: 100%;
+            }
+            .active-btn{
+                color: #2968C8;
+            }
+            .active-btn::after{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
 
 .shop {
     display: grid;
@@ -11,10 +71,8 @@ main {
 
 
     .item {
-        //border: 1px solid #424242c1;
         border: 1px solid #f5f5f5;
         border-radius: 5px;
-        // box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
         box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
         transition: 0.7s ease;
         background-color: #fff;

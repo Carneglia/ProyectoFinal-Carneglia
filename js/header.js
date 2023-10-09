@@ -11,3 +11,6 @@ function togglemenu() {
         menuList.style.height = "0px";
     }
 }
+
+const menuFilter = document.getElementById("menuFilter");
+

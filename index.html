@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
@@ -29,12 +30,11 @@
                 <li><a href="./pages/sobre-nosotros.html">Sobre Nosotros</a></li>
             </ul>
             <img class="burguer-button" src="./recursos/images/hamburguerButton.png" alt="imagen del boton del menu"
-            onclick="togglemenu()">
+                onclick="togglemenu()">
 
             <a href="./pages/carrito.html">
                 <div class="carrito">
                     <i class="bi bi-bag-heart"></i>
-                    <!-- <div id="cantidad" class="cantidad">0</div> -->
                 </div>
             </a>
 
@@ -42,32 +42,48 @@
     </header>
     <main class="index-main">
         <div class="bannerArea">
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-touch="false">
+            <div id="carouselExampleInterval" class="carousel slide carousel-index " data-bs-ride="carousel"
+                data-bs-touch="false" data-bs-pause="false">
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="2000">
+                    <div class="carousel-item active" data-bs-interval="3000" pause:hover="false">
                         <img src="./recursos/images/arosDragones.jpg" class="d-block w-100"
                             alt="Aros con forma de dragones">
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./recursos/images/modelo-aro.jpg" class="d-block w-100"
-                            alt="modelo con un aro que simboliza la tierra">
+                    <div class="carousel-item" data-bs-interval="3000" pause:hover="false">
+                        <picture>
+                            <img src="./recursos/images/modelo-aro.jpg" class="d-block w-100"
+                                alt="modelo con un aro que simboliza la tierra">
+                        </picture>
+
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./recursos/images/mano-aros.jpg" class="d-block w-100"
-                            alt="anillo de plata en forma de mazo">
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <picture>
+                            <img src="./recursos/images/mano-aros.jpg" class="d-block w-100"
+                                alt="anillo de plata en forma de mazo">
+                        </picture>
+
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./recursos/images/guada-aro-escopion.jpg" class="d-block w-100"
-                            alt="aro del signo escorpio">
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <picture>
+                            <img src="./recursos/images/guada-aro-escopion.jpg" class="d-block w-100"
+                                alt="aro del signo escorpio">
+                        </picture>
+
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./recursos/images/espalda-anillos.jpg" class="d-block w-100"
-                            alt="dos anillos de plata">
-                    </div> 
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./recursos/images/modelo-collar.jpg" class="d-block w-100"
-                            alt="dos anillos de plata">
-                    </div> 
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <picture>
+                            <img src="./recursos/images/espalda-anillos.jpg" class="d-block w-100"
+                                alt="dos anillos de plata">
+                        </picture>
+
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <picture>
+                            <img src="./recursos/images/modelo-collar.jpg" class="d-block w-100"
+                                alt="dos anillos de plata">
+                        </picture>
+
+                    </div>
 
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -80,7 +96,25 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-              
+
+            </div>
+        </div>
+        <div class="contenido-container">
+            <h3>Piezas Autenticas <br> Like You!</h3>
+            <div class="promo-envios">
+                <p><i class="bi bi-truck"> </i> Envios a todo el país <i class="bi bi-lightning-charge"></i></p>
+            </div>
+            <div class="contenido">
+
+                <div class="animate__animated animate__slideInUp">
+                    <h4>Compromiso</h4>
+                </div>
+                <div class="animate__animated animate__slideInRight">
+                    <h4>Respeto</h4>
+                </div>
+                <div class="animate__animated animate__slideInLeft">
+                    <h4>Resiliencia</h4>
+                </div>
             </div>
         </div>
     </main>
@@ -95,8 +129,11 @@
             <small>2023 © | Todos los derechos reservados | <b>Desarrollo "Carlos Carneglia Design"</b> </small>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <script src="./js/header.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
