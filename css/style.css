@@ -724,25 +724,12 @@ body {
         font-size: 25px;
         color: white; }
     .index-main .contenido-container h3 {
+      font-size: 16px;
       margin: 8px;
       margin-top: 15px;
       text-transform: uppercase;
       font-family: "Montserrat";
       text-align: center; }
-    .index-main .contenido-container .contenido .animate__animated {
-      border: 1px solid rgba(102, 102, 102, 0.668);
-      border-radius: 5px;
-      padding-top: 10px;
-      margin-bottom: 10px;
-      width: 250px;
-      height: 50px;
-      box-shadow: 0px 0px 10px 1px #ffc82549; }
-      .index-main .contenido-container .contenido .animate__animated h4 {
-        margin: 0;
-        text-transform: uppercase;
-        text-align: center;
-        font-weight: 600;
-        font-size: 20px; }
     .index-main .contenido-container .ver-tienda {
       width: 100%;
       height: 60px;
@@ -752,6 +739,7 @@ body {
       .index-main .contenido-container .ver-tienda h5 {
         margin: auto;
         padding-top: 15px;
+        font-size: 17px;
         font-weight: 600; }
         .index-main .contenido-container .ver-tienda h5 a {
           color: white;

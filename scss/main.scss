@@ -71,34 +71,12 @@ body {
         }
 
         h3 {
+            font-size: 16px;
             margin: 8px;
             margin-top: 15px;
             text-transform: uppercase;
             font-family: $mont;
             text-align: center;
-        }
-
-        .contenido {
-
-            .animate__animated {
-                border: 1px solid rgba(102, 102, 102, 0.668);
-                border-radius: 5px;
-                padding-top: 10px;
-                margin-bottom: 10px;
-                width: 250px;
-                height: 50px;
-                box-shadow: 0px 0px 10px 1px #ffc82549;
-
-                h4 {
-                    margin: 0;
-                    text-transform: uppercase;
-                    text-align: center;
-                    font-weight: 600;
-                    font-size: 20px;
-
-                }
-
-            }
         }
 
         .ver-tienda {
@@ -111,6 +89,7 @@ body {
             h5 {
                 margin: auto;
                 padding-top: 15px;
+                font-size: 17px;
                 font-weight: 600;
                 a{
                     color: white;
