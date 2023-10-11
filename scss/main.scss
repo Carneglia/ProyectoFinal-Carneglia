@@ -29,10 +29,24 @@ body {
     padding-top: 62px;
 
     .bannerArea {
-        height: 100%;
+        max-height: 90vh;
         max-width: 538px;
         overflow: hidden;
 
+        .carousel-index {
+            .carousel {
+                max-height: 90vh;
+            }
+        }
+    }
+
+    .bannerArea-dos {
+        .carousel-index-dos {
+
+            .carousel-dos {
+                display: none;
+            }
+        }
     }
 
     .contenido-container {
@@ -41,6 +55,8 @@ body {
         align-items: center;
         justify-content: center;
         width: 100%;
+
+
 
         .promo-envios {
             width: 100%;
@@ -91,7 +107,8 @@ body {
                 padding-top: 15px;
                 font-size: 17px;
                 font-weight: 600;
-                a{
+
+                a {
                     color: white;
                     text-decoration: none;
                     text-transform: uppercase;
@@ -155,11 +172,57 @@ body {
 
 }
 
+@media(min-width: 520px) {
+    .index-main {
+        background-color: black;
+
+        .bannerArea {
+            max-height: 90vh;
+            width: 100%;
+            overflow: hidden;
+
+            .carousel-index {
+                .carousel {
+                    display: none;
+                }
+            }
+        }
+
+        .bannerArea-dos {
+            max-width: 100%;
+
+            .carousel-index-dos {
+                width: 100%;
+
+                .carousel-dos {
+                    display: block;
+                }
+            }
+        }
+
+        .contenido-container {
+            background-color: #fff;
+        }
+    }
+}
+
 @media(min-width: 1000px) {
-    .contenido {
-        display: flex;
-        width: 100%;
-        justify-content: space-evenly;
+    .index-main {
+        .bannerArea-dos {
+            max-width: 1080px;
+
+            .carousel-index-dos {
+                width: 1080px;
+
+                .carousel-dos {
+                    display: block;
+                }
+            }
+        }
+
+        // .contenido-container {
+        //     background-color: #fff;
+        // }
     }
 }
 

@@ -546,7 +546,7 @@ main {
         border: 1px solid #e2e2e2; }
       .shopContainer .itemShop .infoCompra-container .calcularEnvioContainer .calcular-envio .input-calcular {
         height: 65px;
-        width: 150px;
+        width: 175px;
         text-align: center;
         border: 1px solid #e2e2e2;
         border-top-left-radius: 5px;
@@ -666,7 +666,7 @@ main {
 .sobre-nosotros-main {
   padding-top: 65px; }
   .sobre-nosotros-main .container {
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -679,7 +679,45 @@ main {
       font-size: 20px;
       margin: 10px auto; }
     .sobre-nosotros-main .container p {
-      margin: 10px; }
+      margin: 10px auto; }
+
+@media (min-width: 500px) {
+  .sobre-nosotros-main {
+    padding-top: 65px; }
+    .sobre-nosotros-main .container {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      opacity: 100; }
+      .sobre-nosotros-main .container img {
+        width: 70%;
+        opacity: 0.8;
+        border-radius: 5px; }
+      .sobre-nosotros-main .container h1 {
+        font-size: 25px;
+        margin: 20px auto; }
+      .sobre-nosotros-main .container p {
+        margin: 20px auto; } }
+
+@media (min-width: 1000px) {
+  .sobre-nosotros-main {
+    padding-top: 65px; }
+    .sobre-nosotros-main .container {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      opacity: 100; }
+      .sobre-nosotros-main .container img {
+        width: 70%;
+        opacity: 0.8;
+        border-radius: 5px; }
+      .sobre-nosotros-main .container h1 {
+        font-size: 25px;
+        margin: 10px auto; }
+      .sobre-nosotros-main .container p {
+        margin: 10px; } }
 
 body {
   line-height: normal; }
@@ -695,9 +733,13 @@ body {
   margin: 0;
   padding-top: 62px; }
   .index-main .bannerArea {
-    height: 100%;
+    max-height: 90vh;
     max-width: 538px;
     overflow: hidden; }
+    .index-main .bannerArea .carousel-index .carousel {
+      max-height: 90vh; }
+  .index-main .bannerArea-dos .carousel-index-dos .carousel-dos {
+    display: none; }
   .index-main .contenido-container {
     display: flex;
     flex-direction: column;
@@ -784,11 +826,31 @@ body {
     text-align: center;
     color: #fff; }
 
+@media (min-width: 520px) {
+  .index-main {
+    background-color: black; }
+    .index-main .bannerArea {
+      max-height: 90vh;
+      width: 100%;
+      overflow: hidden; }
+      .index-main .bannerArea .carousel-index .carousel {
+        display: none; }
+    .index-main .bannerArea-dos {
+      max-width: 100%; }
+      .index-main .bannerArea-dos .carousel-index-dos {
+        width: 100%; }
+        .index-main .bannerArea-dos .carousel-index-dos .carousel-dos {
+          display: block; }
+    .index-main .contenido-container {
+      background-color: #fff; } }
+
 @media (min-width: 1000px) {
-  .contenido {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly; } }
+  .index-main .bannerArea-dos {
+    max-width: 1080px; }
+    .index-main .bannerArea-dos .carousel-index-dos {
+      width: 1080px; }
+      .index-main .bannerArea-dos .carousel-index-dos .carousel-dos {
+        display: block; } }
 
 @font-face {
   font-family: "proxima nova";
