@@ -45,8 +45,8 @@ let generarItemCarrito = () => {
         }).join("");
     }
     else {
-       let boton = document.getElementById("botonVolverDos");
-       boton.style = "display:none;"
+        let boton = document.getElementById("botonVolverDos");
+        boton.style = "display:none;"
         productosCarrito.innerHTML = ``
         etiqueta.innerHTML = `<h3>Su carrito está vacío</h3>
 <img src="../recursos/images/gatito.jpg" alt="foto gatito">
@@ -109,18 +109,57 @@ let agregar = (id) => {
 };
 
 let eliminarProducto = (id) => {
-    let itemSeleccionado = id;
-    carrito = carrito.filter((x) => x.id !== itemSeleccionado)
-    generarItemCarrito();
-    totalCuenta();
-    calculo();
-    localStorage.setItem("datos", JSON.stringify(carrito));
+
+    Swal.fire({
+        width:'20em',
+        title: 'Desea eliminar el producto?',
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonColor: '#d33',
+        cancelButtonColor: '#3085d6',
+        confirmButtonText: 'Eliminar',
+        cancelButtonText: 'Seguir Comprando'
+
+    }).then((result) => {
+        if (result.isConfirmed) {
+            let itemSeleccionado = id;
+            carrito = carrito.filter((x) => x.id !== itemSeleccionado)
+            generarItemCarrito();
+            totalCuenta();
+            calculo();
+            localStorage.setItem("datos", JSON.stringify(carrito));
+            Swal.fire(
+                'Deleted!',
+                'El carrito ha sido eliminado.',
+                'success'
+            )
+        }
+    })
 }
 let eliminarCarrito = () => {
-    carrito = [];
-    generarItemCarrito();
-    calculo();
-    localStorage.setItem("datos", JSON.stringify(carrito));
+    Swal.fire({
+        title: 'Desea eliminar el carrito?',
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonColor: '#d33',
+        cancelButtonColor: '#3085d6',
+        confirmButtonText: 'Eliminar',
+        cancelButtonText: 'Seguir Comprando'
+
+    }).then((result) => {
+
+        if (result.isConfirmed) {
+            carrito = [];
+            generarItemCarrito();
+            calculo();
+            localStorage.setItem("datos", JSON.stringify(carrito));
+            Swal.fire(
+                'Deleted!',
+                'El carrito ha sido eliminado.',
+                'success'
+            )
+        }
+    })
 }
 
 let totalCuenta = () => {
@@ -136,9 +175,10 @@ let totalCuenta = () => {
         <h2 class="totalAPagar"> Total a pagar : $ ${monto} </h2>
         <div class="cuentaContainer">
         <button class="pagar">Comprar </button>
-        <button onclick="eliminarCarrito()" class="eliminar"> Vaciar el Carrito </button>
+        <button onclick="eliminarCarrito()" id="btn-eliminar" class="eliminar"> Vaciar el Carrito </button>
         </div>
         `
     } else return;
 }
 totalCuenta();
+
