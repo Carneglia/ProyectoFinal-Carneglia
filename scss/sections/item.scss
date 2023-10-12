@@ -1,5 +1,6 @@
 .shopContainer {
     width: 100%;
+    transition: .3s ease;
 
     .itemShop {
         display: grid;
@@ -8,6 +9,7 @@
         padding-top: 53px;
         background-color: #ffbced1a;
         justify-items: center;
+       
 
 
         .infoCompra-container {

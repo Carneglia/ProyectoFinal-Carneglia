@@ -129,11 +129,6 @@ let eliminarProducto = (id) => {
             totalCuenta();
             calculo();
             localStorage.setItem("datos", JSON.stringify(carrito));
-            // Swal.fire(
-            //     'Eliminado!',
-            //     'El producto fue quitado de su carrito.',
-            //     'info'
-            // ),200;
         }
     })
 }

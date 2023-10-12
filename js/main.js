@@ -40,14 +40,17 @@ let generarShop = () => {
 generarShop();
 
 
+
 let incrementar = (id) => {
     let itemSeleccionado = id;
     let buscador = carrito.find((x) => x.id === itemSeleccionado)
 
     if (buscador === undefined) {
+        
         carrito.push({
             id: itemSeleccionado,
             item: 1,
+            
 
         });
     }
