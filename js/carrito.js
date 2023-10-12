@@ -111,14 +111,15 @@ let agregar = (id) => {
 let eliminarProducto = (id) => {
 
     Swal.fire({
-        width:'20em',
         title: 'Desea eliminar el producto?',
         icon: 'question',
         showCancelButton: true,
+        timer: '6000',
         confirmButtonColor: '#d33',
         cancelButtonColor: '#3085d6',
         confirmButtonText: 'Eliminar',
-        cancelButtonText: 'Seguir Comprando'
+        cancelButtonText: 'Seguir Comprando',
+        
 
     }).then((result) => {
         if (result.isConfirmed) {
@@ -128,19 +129,20 @@ let eliminarProducto = (id) => {
             totalCuenta();
             calculo();
             localStorage.setItem("datos", JSON.stringify(carrito));
-            Swal.fire(
-                'Deleted!',
-                'El carrito ha sido eliminado.',
-                'success'
-            )
+            // Swal.fire(
+            //     'Eliminado!',
+            //     'El producto fue quitado de su carrito.',
+            //     'info'
+            // ),200;
         }
     })
 }
 let eliminarCarrito = () => {
     Swal.fire({
-        title: 'Desea eliminar el carrito?',
+        title: 'Desea vaciar el carrito?',
         icon: 'question',
         showCancelButton: true,
+        timer: '6000',
         confirmButtonColor: '#d33',
         cancelButtonColor: '#3085d6',
         confirmButtonText: 'Eliminar',
@@ -154,9 +156,9 @@ let eliminarCarrito = () => {
             calculo();
             localStorage.setItem("datos", JSON.stringify(carrito));
             Swal.fire(
-                'Deleted!',
-                'El carrito ha sido eliminado.',
-                'success'
+                'Vacio!',
+                'Puedes seguir viendo productos',
+                'info'
             )
         }
     })

@@ -53,6 +53,19 @@ const incrementar = (id) => {
     let buscador = carrito.find((x) => x.id === itemSeleccionado)
 
     if (buscador === undefined) {
+        Toastify({
+            text: "Agregado al carrito",
+            duration: 3000,
+            newWindow: true,
+            close: false,
+            gravity: "top", 
+            position: "right",
+            stopOnFocus: true, 
+            style: {
+              background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+            onClick: function(){}
+          }).showToast();
         carrito.push({
             id: itemSeleccionado,
             item: 1,

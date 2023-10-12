@@ -10,9 +10,6 @@ const cargarProductosLS = () => {
 const guardarProductoLS = (id) => {
     localStorage.setItem("producto", JSON.stringify(id));
 }
-const btnFiltrador = document.querySelectorAll(".filtrador");
-
-
 
 let generarShop = () => {
     return (shop.innerHTML = shopItemsInfo.map((x) => {
@@ -41,19 +38,6 @@ let generarShop = () => {
 };
 
 generarShop();
-
-// btnFiltrador.forEach(boton => {
-//     boton.addEventListener("click", (e) => {
-
-//         btnFiltrador.forEach(boton => boton.classList.remove("active-btn"));
-//         e.currentTarget.classList.add("active-btn");
-
-//         const productosBoton = shopItemsInfo.filter(producto => producto.categoria === e.currentTarget.id)
-        
-//         generarShop(productosBoton)
-
-//     })
-// })
 
 
 let incrementar = (id) => {
