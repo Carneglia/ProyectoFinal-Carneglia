@@ -8,7 +8,6 @@
 @import"./sections/footer.scss";
 @import"./sections/item.scss";
 @import"./sections/sobre-nosotros.scss";
-@import "./sections/productos-dos.scss";
 
 body {
     line-height: normal;
@@ -33,6 +32,8 @@ body {
         max-height: 90vh;
         max-width: 538px;
         overflow: hidden;
+        z-index: 0;
+        
 
         .carousel-index {
             .carousel {

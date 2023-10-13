@@ -16,7 +16,7 @@ let generarShop = () => {
         let { id, nombre, precio, desc, img, categoria } = x;
         let buscador = carrito.find((x) => x.id === id) || [];
         return ` 
-            <article id="pruduct-id-${id}" class="animate__animated animate__slideInUp item" >
+            <article id="pruduct-id-${id}" class="animate__animated animate__slideInUp animation-iteration-count: 1 item" >
             <a href="./items.html" onclick="guardarProductoLS(${id})"><img src=${img}></a> 
                 <div class="detalles">
                 ${categoria}

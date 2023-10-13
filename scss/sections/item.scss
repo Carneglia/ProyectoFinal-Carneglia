@@ -9,13 +9,14 @@
         padding-top: 53px;
         background-color: #ffbced1a;
         justify-items: center;
-       
+
 
 
         .infoCompra-container {
-          h4{
-            margin-bottom: 10px;
-          }
+            h4 {
+                margin-bottom: 10px;
+            }
+
             .calcularEnvioContainer {
 
                 .calcular-envio {
@@ -100,6 +101,7 @@
                         text-decoration: none;
                     }
                 }
+
                 .irAlCarrito:hover {
                     background-color: #2968C8;
                     transition: 0.7s ease;
@@ -128,7 +130,9 @@
                 }
             }
         }
-
+        .infoContainer{
+            max-width: 500px;
+        }
 
         .container {
             max-width: 500px;
@@ -139,11 +143,6 @@
             background-color: #fff;
             margin: 20px 10px;
             text-align: center;
-
-            .infoContainer {
-                margin: 20px;
-            }
-
 
             .imgContainer {
                 overflow: hidden;
@@ -207,11 +206,14 @@
             justify-items: center;
             padding-top: 70px;
 
-            .container {
-                .infoContainer {
-                    margin: 20px;
+            .infoContainer {
+                margin: 20px;
+                margin-top: 30px;
 
-                }
+            }
+
+            .container {
+
 
                 .imgContainer {
                     img {
