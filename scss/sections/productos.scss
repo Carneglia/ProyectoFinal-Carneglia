@@ -3,6 +3,50 @@ main {
     background-color: #ffbced1a;
 
 }
+.filtersContainer {
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 10px ;
+    padding: 20px;
+    text-align: center;
+
+    .filter {
+       
+        background: none;
+        cursor: pointer;
+        border: none;
+        text-transform: uppercase;
+        display: inline-block;
+        margin: 0 8px;
+        position: relative;
+        transition: all 0.2s ease-in-out;
+
+    }
+    .filter::after{
+        content: "";
+        position:absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%);
+        height: 2px;
+        width: 0;
+        background-color: black;
+        transition: all 0.2s ease-in-out;
+    }
+    .filter:hover{
+        color: black;
+    }
+    .filter:hover::after{
+        width: 100%;
+    }
+    .active-btn{
+        color: black;
+    }
+    .active-btn::after{
+        width: 100%;
+    }
+}
+
 .shop {
     display: grid;
     grid-template-columns: repeat(4, 223px);
@@ -83,35 +127,6 @@ main {
         box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 1);
     }
 }
-
-.goPay {
-
-    font-family: "proxima nova";
-    //text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 8px 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    background-color: #3483fa;
-    border-color: transparent;
-    color: #fff;
-    cursor: pointer;
-
-    a {
-        text-decoration: none;
-        color: #fff;
-
-    }
-}
-
-.goPay:hover {
-    background-color: #2968C8;
-    transition: 0.7s ease;
-}
-
-
-
 
 @media (max-width: 1000px) {
     .shop {

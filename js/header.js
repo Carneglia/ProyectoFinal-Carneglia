@@ -12,5 +12,4 @@ function togglemenu() {
     }
 }
 
-const menuFilter = document.getElementById("menuFilter");
 

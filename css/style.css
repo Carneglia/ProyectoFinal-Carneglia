@@ -9,6 +9,40 @@ main {
   padding-top: 80px;
   background-color: #ffbced1a; }
 
+.filtersContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 20px;
+  text-align: center; }
+  .filtersContainer .filter {
+    background: none;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 8px;
+    position: relative;
+    transition: all 0.2s ease-in-out; }
+  .filtersContainer .filter::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 2px;
+    width: 0;
+    background-color: black;
+    transition: all 0.2s ease-in-out; }
+  .filtersContainer .filter:hover {
+    color: black; }
+  .filtersContainer .filter:hover::after {
+    width: 100%; }
+  .filtersContainer .active-btn {
+    color: black; }
+  .filtersContainer .active-btn::after {
+    width: 100%; }
+
 .shop {
   display: grid;
   grid-template-columns: repeat(4, 223px);
@@ -60,25 +94,6 @@ main {
     transform: scale(1.03);
     box-shadow: 0px 1.2px 1.2px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 1px 0 black; }
-
-.goPay {
-  font-family: "proxima nova";
-  font-size: 16px;
-  font-weight: 600;
-  padding: 8px 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  background-color: #3483fa;
-  border-color: transparent;
-  color: #fff;
-  cursor: pointer; }
-  .goPay a {
-    text-decoration: none;
-    color: #fff; }
-
-.goPay:hover {
-  background-color: #2968C8;
-  transition: 0.7s ease; }
 
 @media (max-width: 1000px) {
   .shop {

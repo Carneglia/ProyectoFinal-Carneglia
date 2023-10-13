@@ -10,8 +10,6 @@
         background-color: #ffbced1a;
         justify-items: center;
 
-
-
         .infoCompra-container {
             h4 {
                 margin-bottom: 10px;
@@ -130,7 +128,8 @@
                 }
             }
         }
-        .infoContainer{
+
+        .infoContainer {
             max-width: 500px;
         }
 
@@ -158,16 +157,12 @@
                 }
             }
 
-
-
-
             .contenidoProducto {
                 h3 {
                     font-size: 18px;
                     text-transform: uppercase;
                     font-weight: bold;
                     margin: 10px auto;
-
                 }
             }
         }
@@ -194,8 +189,6 @@
     }
 }
 
-
-
 @media (min-width: 1000px) {
     .shopContainer {
         width: 90%;
@@ -213,8 +206,6 @@
             }
 
             .container {
-
-
                 .imgContainer {
                     img {
                         width: 70%;

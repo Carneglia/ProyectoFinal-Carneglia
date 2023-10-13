@@ -11,15 +11,15 @@ let shopItemsInfo = [
             material: "Plata 925", info: "Medidas: S, M, L, XL", categoria: "pulseras"
     },
     {
-        id: 3, nombre: "earth erring", precio: 31000, desc: "Confianza / Posicionamiento.", descXL:
-            "La forma de este aro es un tributo a la tierra misma. Su diseño evoca las curvas suaves de las colinas y montañas, recordando la serenidad y la resistencia que caracterizan a este elemento. La plata de ley 925 utilizada en su construcción brilla con un brillo suave y natural que se asemeja a la textura de la tierra misma.", img: "../recursos/images/aroViento.jpg",
+        id: 3, nombre: "water erring", precio: 31000, desc: "Creatividad / Fluidez.", descXL:
+            "La forma de este aro es un tributo al agua misma. Su diseño evoca las curvas suaves de las mareas, recordando la fluidez y el movimiento que caracterizan a este elemento. La plata de ley 925 utilizada en su construcción brilla con un brillo suave y natural que se asemeja a la textura del reflejo del sol en el agua misma.", img: "../recursos/images/aroViento.jpg",
             material: "Plata 925", info: "Medidas: S, M, L, XL", categoria: "aros"
     },
     {
         id: 4, nombre: "magic ring", precio: 41000, desc: "Creatividad / Misterio.", descXL:
             "Este exquisito anillo de plata hecho a mano es una obra maestra de la artesanía. Cada detalle ha sido cuidadosamente diseñado y elaborado por un habilidoso artesano, lo que lo convierte en una pieza única y especial. La plata de ley 925 de alta calidad utilizada en su creación brilla con un brillo suave y atemporal que complementará cualquier estilo.", img: "../recursos/images/anilloDadoMano.jpg",
             info:" <br><b>Cómo sacar la medida de tu anillo:</b> <br> Toma la medida interna de un anillo que te quede bien, chequealo en la tablita y mandas el talle. (Ponerlo en comentarios)",
-            material: "Plata 925", categoria: "anillo"
+            material: "Plata 925", categoria: "anillos"
     
         },
     {

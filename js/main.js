@@ -11,33 +11,56 @@ const guardarProductoLS = (id) => {
     localStorage.setItem("producto", JSON.stringify(id));
 }
 
-let generarShop = () => {
-    return (shop.innerHTML = shopItemsInfo.map((x) => {
-        let { id, nombre, precio, desc, img, categoria } = x;
-        let buscador = carrito.find((x) => x.id === id) || [];
-        return ` 
-            <article id="pruduct-id-${id}" class="animate__animated animate__slideInUp animation-iteration-count: 1 item" >
-            <a href="./items.html" onclick="guardarProductoLS(${id})"><img src=${img}></a> 
-                <div class="detalles">
-                ${categoria}
-                    <h2>${nombre}</h2>
-                    <p>${desc}</p>
-                    <div class="precio-cantidad">
-                        <h3> $ ${precio} </h3>
-                       <div class="botones">
-                        <i onclick="quitar(${id})" class="bi bi-bag-dash"></i>
-                        <div id=${id} class="cantidad">
-                        ${buscador.item === undefined ? 0 : buscador.item}</div>
-                        <i onclick="incrementar(${id})" class="bi bi-bag-plus"></i>
-                       </div>
-                    </div>
-                </div>
-            </article>
-    `
-    }).join(""));
-};
+const generarShop = (productosElegidos) => {
+    let contenidoHTML = "";
 
-generarShop();
+
+    productosElegidos.forEach(x => {
+        let { id, nombre, desc, precio, categoria, img } = x;
+        let buscador = carrito.find((x) => x.id === id) || [];
+        contenidoHTML +=
+            `
+        <article id="itemsFiltrar" class="item" >
+                <a href="./items.html" onclick="guardarProductoLS(${id})"><img src=${img}></a> 
+                    <div class="detalles">
+                        <h2>${nombre}</h2>
+                       <p>${desc}</p>
+                        <div class="precio-cantidad">
+                             <h3> $ ${precio} </h3>
+                           <div class="botones">
+                            <i onclick="quitar(${id})" class="bi bi-bag-dash"></i>
+                            <div id=${id} class="cantidad">
+                            ${buscador.item === undefined ? 0 : buscador.item}</div>
+                            <i onclick="incrementar(${id})" class="bi bi-bag-plus"></i>
+                           </div>
+                        </div>
+                    </div>
+                 </article>`;
+    })
+
+    document.getElementById("shop").innerHTML = contenidoHTML;
+
+}
+generarShop(productoStorage);
+
+
+const btnFiltrar = document.querySelectorAll(".filter");
+
+btnFiltrar.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+
+        btnFiltrar.forEach(boton => boton.classList.remove("active-btn"))
+
+        e.currentTarget.classList.add("active-btn");
+        if (e.currentTarget.id != "todos") {
+            const productoBoton = productoStorage.filter(producto => producto.categoria === e.currentTarget.id)
+
+            generarShop(productoBoton);
+        } else {
+            generarShop(productoStorage);
+        }
+    })
+})
 
 
 
@@ -50,9 +73,10 @@ let incrementar = (id) => {
         carrito.push({
             id: itemSeleccionado,
             item: 1,
-            
+
 
         });
+        
     }
     else {
         buscador.item += 1;

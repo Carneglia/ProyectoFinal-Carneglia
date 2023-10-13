@@ -1,7 +1,5 @@
 let etiqueta = document.getElementById("etiqueta");
 let productosCarrito = document.getElementById("productosCarrito");
-
-
 let carrito = JSON.parse(localStorage.getItem("datos")) || [];
 
 let calculo = () => {
