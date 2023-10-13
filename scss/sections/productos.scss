@@ -11,7 +11,8 @@ main {
     text-align: center;
 
     .filter {
-       
+        color: black;
+       font-size: 16px;
         background: none;
         cursor: pointer;
         border: none;
@@ -30,17 +31,20 @@ main {
         transform: translate(-50%);
         height: 2px;
         width: 0;
-        background-color: black;
+        background-color:  #2968C8;
         transition: all 0.2s ease-in-out;
     }
     .filter:hover{
-        color: black;
+        color: #2968C8;
+        
     }
     .filter:hover::after{
         width: 100%;
     }
     .active-btn{
-        color: black;
+        color:  #2968C8;
+        font-weight: 600;
+        transition: 0.7ms ease;
     }
     .active-btn::after{
         width: 100%;
